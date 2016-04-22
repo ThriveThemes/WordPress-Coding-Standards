@@ -379,6 +379,7 @@
 	<!-- Covers rule: When doing logical comparisons, always put the variable on the right side,
 		 constants or literals on the left. -->
 	<rule ref="WordPress.PHP.YodaConditions"/>
+	-->
 
 	<!-- Rule: Yoda conditions for <, >, <= or >= are significantly more difficult to read
 		 and are best avoided. -->
