@@ -3,7 +3,7 @@
  * Unit test class for WordPress Coding Standard.
  *
  * @package WPCS\WordPressCodingStandards
- * @link    https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
+ * @link    https://github.com/WordPress/WordPress-Coding-Standards
  * @license https://opensource.org/licenses/MIT MIT
  */
 
@@ -114,6 +114,8 @@ class I18nUnitTest extends AbstractSniffUnitTest {
 					153 => 1,
 					157 => 1,
 					178 => 1,
+					181 => 3,
+					184 => 1,
 				);
 
 			case 'I18nUnitTest.2.inc':

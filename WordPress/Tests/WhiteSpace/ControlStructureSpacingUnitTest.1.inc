@@ -5,7 +5,7 @@ while( have_posts() ) { // Okay, comments are okay here.
 	// Okay, comments are okay here as well.
 } // Okay, comments are okay here.
 
-// See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/40 .
+// See https://github.com/WordPress/WordPress-Coding-Standards/issues/40 .
 if ( true ) {
 
 	// code.
@@ -290,3 +290,18 @@ $returntype = function ( string $input ): string {}; // Ok.
 $returntype = function ( string $input ) : string {}; // Ok.
 $returntype = function ( string $input, array $inputs ): string {}; // Ok.
 $returntype = function ( string $input, array $inputs ) : string {}; // Ok.
+
+// Issue 1792.
+$matching_options = array_filter(
+	$imported_options,
+	function ( $option ) use ( $option_id ): bool {
+		return $option['id'] === $option_id;
+	}
+);
+
+$matching_options = array_filter(
+	$imported_options,
+	function ( $option ) use ( $option_id ) : bool {
+		return $option['id'] === $option_id;
+	}
+);

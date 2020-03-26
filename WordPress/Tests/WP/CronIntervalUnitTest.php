@@ -3,7 +3,7 @@
  * Unit test class for WordPress Coding Standard.
  *
  * @package WPCS\WordPressCodingStandards
- * @link    https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
+ * @link    https://github.com/WordPress/WordPress-Coding-Standards
  * @license https://opensource.org/licenses/MIT MIT
  */
 
@@ -45,7 +45,6 @@ class CronIntervalUnitTest extends AbstractSniffUnitTest {
 			41  => 1,
 			43  => 1,
 			53  => 1,
-			56  => 1, // False positive.
 			67  => 1,
 			76  => 1,
 			85  => 1,

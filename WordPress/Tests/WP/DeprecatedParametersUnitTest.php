@@ -3,7 +3,7 @@
  * Unit test class for WordPress Coding Standard.
  *
  * @package WPCS\WordPressCodingStandards
- * @link    https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
+ * @link    https://github.com/WordPress/WordPress-Coding-Standards
  * @license https://opensource.org/licenses/MIT MIT
  */
 
@@ -27,7 +27,7 @@ class DeprecatedParametersUnitTest extends AbstractSniffUnitTest {
 	 * @return array <int line number> => <int number of errors>
 	 */
 	public function getErrorList() {
-		$errors = array_fill( 28, 34, 1 );
+		$errors = array_fill( 28, 36, 1 );
 
 		$errors[22] = 1;
 		$errors[23] = 1;
@@ -35,7 +35,7 @@ class DeprecatedParametersUnitTest extends AbstractSniffUnitTest {
 
 		// Override number of errors.
 		$errors[33] = 2;
-		$errors[47] = 2;
+		$errors[48] = 2;
 
 		return $errors;
 	}
@@ -46,10 +46,7 @@ class DeprecatedParametersUnitTest extends AbstractSniffUnitTest {
 	 * @return array <int line number> => <int number of warnings>
 	 */
 	public function getWarningList() {
-		return array(
-			65 => 1,
-			66 => 1,
-		);
+		return array();
 	}
 
 }

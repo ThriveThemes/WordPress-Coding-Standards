@@ -143,6 +143,7 @@ get_user_details();
 get_usermeta();
 get_usernumposts();
 graceful_fail();
+install_blog_defaults();
 is_main_blog();
 is_site_admin();
 is_taxonomy();
@@ -319,10 +320,6 @@ use function popuplinks as something_else; // Related to issue #1306.
 post_form_autocomplete_off();
 wp_embed_handler_googlevideo();
 wp_get_sites();
-
-/*
- * Warning.
- */
 /* ============ WP 4.7 ============ */
 _sort_nav_menu_items();
 _usort_terms_by_ID();
@@ -337,3 +334,14 @@ get_shortcut_link();
 is_user_option_local();
 wp_ajax_press_this_add_category();
 wp_ajax_press_this_save_post();
+
+/*
+ * Warning.
+ */
+/* ============ WP 5.1 ============ */
+insert_blog();
+install_blog();
+/* ============ WP 5.3 ============ */
+_wp_json_prepare_data();
+_wp_privacy_requests_screen_options();
+update_user_status();

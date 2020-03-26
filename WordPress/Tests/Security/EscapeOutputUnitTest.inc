@@ -289,3 +289,9 @@ echo esc_html( $something ),
 echo get_the_title(); // Bad.
 echo wp_kses_post( get_the_title() ); // Ok.
 echo esc_html( get_the_title() ); // Ok.
+
+echo implode( '<br>', map_deep( $items, 'esc_html' ) ); // Ok.
+echo implode( '<br>', map_deep( $items, 'foo' ) ); // Bad.
+
+_deprecated_file( basename( __FILE__ ), '1.3.0' ); // Ok.
+_deprecated_file( $file, '1.3.0' ); // Error.

@@ -3,7 +3,7 @@
  * Unit test class for WordPress Coding Standard.
  *
  * @package WPCS\WordPressCodingStandards
- * @link    https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
+ * @link    https://github.com/WordPress/WordPress-Coding-Standards
  * @license https://opensource.org/licenses/MIT MIT
  */
 
@@ -46,6 +46,13 @@ class NonceVerificationUnitTest extends AbstractSniffUnitTest {
 			159 => 1,
 			160 => 1,
 			161 => 1,
+			177 => 1,
+			185 => 1,
+			190 => 1,
+			198 => 1,
+			202 => 1,
+			252 => 1,
+			269 => 1,
 		);
 	}
 
